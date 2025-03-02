@@ -13,3 +13,7 @@ class vehicle :
             f"{self.__class__.__name__}:{self.brand} {self.model},Year:{self.year},"
             f"Renatal Price:${self.__rental_price_per_day}/day"
         )
+    def calculateRentalCost(self,Days):
+        return Days*int((self.__rental_price_per_day))
+class Car(vehicle):
+    
